@@ -22,7 +22,7 @@ module.exports = {
     'max-len': 'off',
     'guard-for-in': 'off',
     'no-param-reassign': 'off',
-    'linebreak-style': ['error', 'windows'],
+    /* 'linebreak-style': ['error', 'windows'], */
     'react/jsx-max-props-per-line': ['off'],
     'comma-dangle': 'off',
     'implicit-arrow-linebreak': 'off',
