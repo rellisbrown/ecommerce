@@ -83,6 +83,7 @@ const StyledIncrementButton = styled(IconButton)`
   margin: auto 0 auto 0;
   opacity: ${(props) => (props.visible ? 1 : 0)};
   pointer-events: ${(props) => (props.visible ? 'auto' : 'none')};
+  transition: opacity 0.3s ease;
   /* width: fit-content; */
 `;
 
@@ -140,6 +141,7 @@ const ProductCard = ({ product }) => {
           <StyledViewButton variant="outlined">View</StyledViewButton>
           <StyledAddButton
             variant="outlined"
+            color={checkCart() ? 'success' : 'primary'}
             startIcon={<ShoppingCartOutlinedIcon />}
             onClick={() => addItem(product)}
           >
